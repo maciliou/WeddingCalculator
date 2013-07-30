@@ -1,19 +1,25 @@
 package com.bezier.app.weddingcalculator;
 
-import com.example.com.bezier.app.weddingcalculator.R;
+import com.bezier.app.weddingcalculator.R;
 
 import android.os.Bundle;
-import android.app.Activity;
+import android.annotation.SuppressLint;
+import android.app.ActionBar;
+import android.app.ActionBar.Tab;
+import android.app.FragmentTransaction;
+import android.content.Intent;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.view.ViewPager;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
 import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ShareActionProvider;
 import android.widget.TextView;
-import android.widget.Toast;
 
-public class MainActivity extends Activity {
+public class MainActivity extends FragmentActivity {
 
 	private EditText editTextGroup1_01;
 	private EditText editTextGroup2_01;
@@ -56,12 +62,17 @@ public class MainActivity extends Activity {
 	private long valueOfEditTextGroup6_01;		
 	private long total;
 	
+	private ShareActionProvider mShareActionProvider;
+	ActionBar mActionBar;
+    ViewPager mPager;
+    
+	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		Button button = (Button)findViewById(R.id.button1);
+/*		Button button = (Button)findViewById(R.id.button1);
 		button.setOnClickListener(buttonListener);
 		
 		//婚紗攝影及禮服
@@ -103,14 +114,7 @@ public class MainActivity extends Activity {
 		//其他雜項
 		editTextGroup6_01 = (EditText)findViewById(R.id.editTextGroup6_01);		
 		//總金額
-		textViewTotalAmount = (TextView)findViewById(R.id.textViewTotalAmount);
-		
-		//editTextGroup3_07 金飾[7/26新增]
-		//editTextGroup3_11 喜帖印製寄發[7/26新增]
-		//editTextGroup3_08 錄影及攝影[7/26新增]
-		//editTextGroup3_09 新娘秘書[7/26新增]
-		//editTextGroup3_10 場地佈置[7/26新增]
-		//editTextGroup4_06 首飾配件(鞋、胸花…)[7/26刪除]
+		textViewTotalAmount = (TextView)findViewById(R.id.textViewTotalAmount);*/
 		
 		// init each value
 		valueOfEditTextGroup1_01 = 0;
@@ -133,19 +137,118 @@ public class MainActivity extends Activity {
 		valueOfEditTextGroup5_01 = 0;
 		valueOfEditTextGroup6_01 = 0;	
 		total = 0;
+		
+		mActionBar = getActionBar();
+		mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		
+		/** Getting a reference to ViewPager from the layout */
+        mPager = (ViewPager) findViewById(R.id.pager);
+        
+        /** Getting a reference to FragmentManager */
+        FragmentManager fm = getSupportFragmentManager();
+        
+        ViewPager.SimpleOnPageChangeListener pageChangeListener = new ViewPager.SimpleOnPageChangeListener() {
+
+			@Override
+			public void onPageSelected(int position) {
+				super.onPageSelected(position);
+				mActionBar.setSelectedNavigationItem(position);
+			}
+        	
+        };
+        
+        mPager.setOnPageChangeListener(pageChangeListener);
+        
+        MyFragmentPagerAdapter fragmentPagerAdapter = new MyFragmentPagerAdapter(fm);
+        
+        mPager.setAdapter(fragmentPagerAdapter);
+        
+        mActionBar.setDisplayShowTitleEnabled(true);
+        
+        ActionBar.TabListener tabListener = new ActionBar.TabListener() {
+			
+			@Override
+			public void onTabUnselected(Tab tab, FragmentTransaction ft) {
+				// TODO Auto-generated method stub
+				
+			}
+			
+			@Override
+			public void onTabSelected(Tab tab, FragmentTransaction ft) {
+				mPager.setCurrentItem(tab.getPosition());
+			}
+			
+			@Override
+			public void onTabReselected(Tab tab, FragmentTransaction ft) {
+				// TODO Auto-generated method stub
+				
+			}
+		};
+		
+		Tab tab = mActionBar.newTab()
+				.setText(MainActivity.this.getResources().getText(R.string.Fragment1))
+				.setTabListener(tabListener);
+		mActionBar.addTab(tab);
+		
+		tab = mActionBar.newTab()
+				.setText(MainActivity.this.getResources().getText(R.string.Fragment2))
+				.setTabListener(tabListener);
+        mActionBar.addTab(tab);
+        
+		tab = mActionBar.newTab()
+				.setText(MainActivity.this.getResources().getText(R.string.Fragment3))
+				.setTabListener(tabListener);
+        mActionBar.addTab(tab);
+        
+		tab = mActionBar.newTab()
+				.setText(MainActivity.this.getResources().getText(R.string.Fragment4))
+				.setTabListener(tabListener);
+        mActionBar.addTab(tab);
+        
+		tab = mActionBar.newTab()
+				.setText("Apple")
+				.setTabListener(tabListener);
+        mActionBar.addTab(tab);
+		
+		
 	}
 
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
+		mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.menu_share).getActionProvider();
+
+	    // If you use more than one ShareActionProvider, each for a different action,
+	    // use the following line to specify a unique history file for each one.
+	    // mShareActionProvider.setShareHistoryFileName("custom_share_history.xml");
+
+	    // Set the default share intent
+	    mShareActionProvider.setShareIntent(getDefaultShareIntent());		
 		return true;
 	}
 	
+	private Intent getDefaultShareIntent() {
+	        Intent intent = new Intent(Intent.ACTION_SEND);
+	        intent.setType("text/plain");
+	        intent.putExtra(Intent.EXTRA_SUBJECT, "SUBJECT");
+	        intent.putExtra(Intent.EXTRA_TEXT,"Extra Text");
+	        return intent;
+	}
+	 
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		if(item.getItemId() == R.id.action_settings) {
+		}
+		return super.onOptionsItemSelected(item);
+	}
+
 	public OnClickListener buttonListener = new OnClickListener() {
 		
 		@Override
 		public void onClick(View v) {
+			/*
 			if(v.getId() == R.id.button1) {
 				total = 0;
 				try {
@@ -302,9 +405,8 @@ public class MainActivity extends Activity {
 				total += valueOfEditTextGroup6_01;
 				
 				textViewTotalAmount.setText(String.valueOf(total));
-			}
+			}*/
 		}
-		
 	};
 
 }
