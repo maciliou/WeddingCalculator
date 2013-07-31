@@ -1,0 +1,12 @@
+# view res/layout/activity_main.xml #generated:14
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:17
+-keep class com.bezier.app.weddingcalculator.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:27
+-keep class com.facebook.LoginActivity { <init>(...); }
+
+# view res/layout/com_facebook_usersettingsfragment.xml #generated:48
+-keep class com.facebook.widget.LoginButton { <init>(...); }
+
