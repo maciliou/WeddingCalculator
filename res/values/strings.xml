@@ -6,10 +6,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_second">SecondActivity</string>
     
-    <string name="Fragment1">頁面1</string>
-    <string name="Fragment2">頁面2</string>
-    <string name="Fragment3">頁面3</string>
-    <string name="Fragment4">頁面4</string>
+    <string name="Fragment1">結婚預算</string>
+    <string name="Fragment2">文定禮俗</string>
+    <string name="Fragment3">結婚禮俗</string>
+    <string name="Fragment4">關於貝姿</string>
     <string name="app_id">538560766198288</string>
                 
 </resources>

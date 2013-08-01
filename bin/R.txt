@@ -91,8 +91,8 @@ int drawable other 0x7f020032
 int drawable result_text_view_bg 0x7f020033
 int drawable title_bg 0x7f020034
 int drawable wine 0x7f020035
-int id action_like 0x7f040032
-int id action_settings 0x7f040031
+int id action_like 0x7f040033
+int id action_settings 0x7f040032
 int id button1 0x7f04002f
 int id com_facebook_login_activity_progress_bar 0x7f040006
 int id com_facebook_picker_activity_circle 0x7f040005
@@ -140,6 +140,7 @@ int id picker_subtitle 0x7f040015
 int id scrollView1 0x7f040019
 int id search_box 0x7f040014
 int id small 0x7f040000
+int id textView2 0x7f040031
 int id textViewTotalAmount 0x7f040030
 int id title 0x7f04001b
 int layout activity_main 0x7f030000

@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="11"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -22,10 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="com.bezier.app.weddingcalculator.SecondActivity"
-            android:label="@string/app_name" >
-        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <activity android:name="com.facebook.LoginActivity" android:label="@string/app_name"></activity>
     </application>
 
 </manifest>

@@ -1,14 +1,329 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp" >
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="傳統禮俗"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
 
-</LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/title_bg"
+                android:paddingBottom="@dimen/title_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/title_vertical_margin" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="文定當天"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#d91c5c" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="祭祖"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="準新郎出發前往女家之前，應先在家中拜祭祖先，以納彩用的大餅或盒仔餅放於祖先前面，上香告訴祖先將前往某處地址的女家下聘，並祈求姻緣幸福美滿。" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="出發"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="訂婚當日男方攜帶聘禮（六禮或十二禮），鳴炮出發前往女方家。赴女方家的人由男方家年長親友擔任（最好多為男生），過訂人數取吉祥數，大多為六或八人。人數／禮車數須為雙數，但避免4或8的人數，禮車數一般為6輛，記得新郎跟媒人同坐一車。雙方看好戴戒子時辰，通常為早上11:00前左右，男方並應提前一小時到達。 " />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="迎納"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="男方納聘車隊到女方家前約一百公尺處時「鳴炮」，女方也「鳴炮」回應。媒人先下車，新郎最後下車，並由女方家其中一位兄弟開車門請出，並端上洗瞼水讓新郎洗手、擦手，新郎回開門禮給幼輩。 " />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="介紹"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="男方親友依序入女家，媒人正式介紹雙方親友。先介紹男方親友再介紹女方親友，最後才介紹準新郎，此時媒人亦會說一些吉祥話，增添氣氛。 " />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="納徵"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="男方工作人員抬春盛聘禮進入女方家客廳，女家接受聘禮賞予紅包（扛伕禮／車伕禮），並將聘禮一一陳列。媒人居中將大小聘，金飾等禮單點交女方家長，女方親友將聘禮收好，並在神明桌上陳列供品。 " />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="奉甜茶 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="女方長輩請男方親屬依長幼入座，新郎居末座。新娘此時才由一福氣婦人牽引出堂，捧著甜茶向男方來賓一一敬茶，杯數應與被奉茶人數相同，不可有多有少，媒人隨旁唸吉祥話祝福。 " />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="壓茶甌"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="片刻後再由福氣婦人牽引新娘，捧茶盤出堂收茶甌（杯），男方親友將紅包和茶杯（紅包捲起放入杯中）一一置於茶盤。 " />
+            </RelativeLayout>
+            
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="掛手指 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="時辰到，由福氣婦人牽引新娘至大廳。在雙方家長與親友的福證下，準新娘面向外坐在正廳中的高椅上，腳放矮椅上（高椅坐，矮椅翹腳）（如係招贅則面向內）。戴戒指時，新郎先戴新娘右手中指，新娘再戴新郎左手中指，媒人唸吉祥語。雙方長輩都會提醒新人們，在掛手指套到第二指節時要彎起來，不能讓對方將戒指戴到底，這是為了避免婚後被吃死死。戒指又分金戒、銅戒用紅線相繫，金、銅取同音，意同心，或可用鑽戒取代。新郎交〔官頷錢（紅包）〕給新娘，媒人在旁唸吉祥語。準婆婆替新娘戴上項鍊，見面禮之意。戴完訂婚戒指後，媒人提出雙方改換稱呼，一一稱呼過。 " />
+            </RelativeLayout>
+             
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="祭祖"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="請新娘之舅父點燭燃香，點「排香」兩對，女方父母及準新人各一，共四份。女方要給母舅「點燭禮」（男方提供）。女方受聘後，由一位福壽雙全的長輩在列祖列宗神位前點燭，燃香，獻餅獻禮 ( 即男方送來的餅與禮 )，唸吉祥語隨之由女方父母拜神明、祖先，並告婚事以定， 祈求保佑。有件事要記得，香柱插入香爐時，一次就得插定不可重插，這是因為古有忌諱，若是重插香柱恐怕會重婚。 " />
+            </RelativeLayout>
+            
+              <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="訂婚宴"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="訂婚儀式完成後，女方設宴。用餐畢男方家長給「壓桌禮」紅包，「姊妹桌」紅包。女方幼輩捧面盆水（內放毛巾）給男方來客洗手（男方給「捧面盆水禮」紅包），如在餐廳宴客則可省略。男方並致贈給所有幫忙的人紅包，以為謝禮。男方於訂婚宴未完成之前就先行離開，不能說再見，以免滋生枝節。女方並應備雞腿紮紅紙附上紅包一份給男方幼輩。 " />
+            </RelativeLayout>
+            
+              <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="女方回禮 "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="女方回送男方禮品稱為「回盛」（又稱「壓盛」），擺入男方「行聘禮品」取出後的空盛內。女方將男方所送來的「行聘禮品」回送一部分至男方「行聘禮品」取出後的春盛內（註一）。新娘事先備好送新郎從頭到腳六件或十二件的隨身用品。若聘金退回或只收小定，女方留下紅條，媒人自女方家長手中接下後，再轉交男方家長。 " />
+            </RelativeLayout>
+            
+               <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin" >
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="贈餅  "
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title"
+                    android:text="女方將訂婚喜餅分贈親朋好友，新娘不可吃自己的喜餅。一般習俗也有此一說，新娘只要不要吃拜公媽的喜餅亦可。" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

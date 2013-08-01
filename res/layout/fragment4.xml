@@ -4,5 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
-
+     
+     <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="關於「結婚小工具」"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+ <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:text="界面設計：Maci, 程式設計:Brandon" />
+  
 </LinearLayout>
