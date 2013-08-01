@@ -31,6 +31,8 @@ import android.widget.Toast;
 
 import com.facebook.*;
 import com.facebook.model.*;
+import com.facebook.widget.WebDialog;
+import com.facebook.widget.WebDialog.OnCompleteListener;
 
 public class MainActivity extends FragmentActivity {
 
@@ -291,12 +293,45 @@ public class MainActivity extends FragmentActivity {
 		            
 					if(session.isOpened()) {
 						// make request to the /me API
+						//Request request = new Request(Session.getActiveSession(), "me/feed", params, HttpMethod.POST);
+						
 						Request.executeMeRequestAsync(session, new Request.GraphUserCallback() {
 
 						  // callback after Graph API response with user object
 						  @Override
 						  public void onCompleted(GraphUser user, Response response) {
-							  Toast.makeText(MainActivity.this, user.getName() + "說讚!!!", Toast.LENGTH_SHORT).show();							  
+							  if(user != null) {
+									Bundle params = new Bundle();
+									params.putString("caption", "房貸計算機");
+									params.putString("message", "【房貸計算機】 快速試算房貸利率第一首選，是購屋、投資、仲介不可缺的小工具");
+									params.putString("link", "https://play.google.com/store/apps/details?id=com.bezier.app.loancalculator");
+									params.putString("picture", "https://drive.google.com/uc?export=view&id=0BxQow9kRw_AHOEtqRGk1U18xSWc");					
+									
+									WebDialog feedDialog = (
+									        new WebDialog.FeedDialogBuilder(MainActivity.this,
+									            Session.getActiveSession(),
+									            params))
+									        .setOnCompleteListener(new OnCompleteListener(){
+
+												@Override
+												public void onComplete(Bundle values,
+														FacebookException error) {
+									                if (error == null) {
+									                    // When the story is posted, echo the success
+									                    // and the post Id.
+									                    final String postId = values.getString("post_id");
+									                    if (postId != null) {
+									                        Toast.makeText(MainActivity.this,
+									                            "已分享至臉書",
+									                            Toast.LENGTH_LONG).show();
+									                    }
+									                }
+													
+												}})
+									        .build();
+									    feedDialog.show();								  
+								  //Toast.makeText(MainActivity.this, user.getName() + "說讚!!!", Toast.LENGTH_SHORT).show();	
+							  }					  
 						  }
 						});						
 											
