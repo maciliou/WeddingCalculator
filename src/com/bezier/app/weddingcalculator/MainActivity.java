@@ -1,5 +1,8 @@
 package com.bezier.app.weddingcalculator;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
 import com.bezier.app.weddingcalculator.R;
 
 import android.os.Bundle;
@@ -8,9 +11,15 @@ import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.Signature;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
+import android.util.Base64;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,6 +27,10 @@ import android.view.View.OnClickListener;
 import android.widget.EditText;
 import android.widget.ShareActionProvider;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.facebook.*;
+import com.facebook.model.*;
 
 public class MainActivity extends FragmentActivity {
 
@@ -66,6 +79,15 @@ public class MainActivity extends FragmentActivity {
 	ActionBar mActionBar;
     ViewPager mPager;
     
+    
+    
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		super.onActivityResult(requestCode, resultCode, data);
+		Session.getActiveSession().onActivityResult(this, requestCode, resultCode, data);
+	}
+
+
 	@SuppressLint("NewApi")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -205,11 +227,26 @@ public class MainActivity extends FragmentActivity {
 				.setTabListener(tabListener);
         mActionBar.addTab(tab);
         
-		tab = mActionBar.newTab()
+/*		tab = mActionBar.newTab()
 				.setText("Apple")
 				.setTabListener(tabListener);
-        mActionBar.addTab(tab);
+        mActionBar.addTab(tab);*/
 		
+        // Add code to print out the key hash
+        try {
+            PackageInfo info = getPackageManager().getPackageInfo(
+                    "com.bezier.app.weddingcalculator", 
+                    PackageManager.GET_SIGNATURES);
+            for (Signature signature : info.signatures) {
+                MessageDigest md = MessageDigest.getInstance("SHA");
+                md.update(signature.toByteArray());
+                Log.i("KeyHash:", Base64.encodeToString(md.digest(), Base64.DEFAULT));
+                }
+        } catch (NameNotFoundException e) {
+
+        } catch (NoSuchAlgorithmException e) {
+
+        }        
 		
 	}
 
@@ -218,14 +255,14 @@ public class MainActivity extends FragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
-		mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.menu_share).getActionProvider();
+/*		mShareActionProvider = (ShareActionProvider) menu.findItem(R.id.menu_share).getActionProvider();
 
 	    // If you use more than one ShareActionProvider, each for a different action,
 	    // use the following line to specify a unique history file for each one.
 	    // mShareActionProvider.setShareHistoryFileName("custom_share_history.xml");
 
 	    // Set the default share intent
-	    mShareActionProvider.setShareIntent(getDefaultShareIntent());		
+	    mShareActionProvider.setShareIntent(getDefaultShareIntent());		*/
 		return true;
 	}
 	
@@ -240,6 +277,33 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		if(item.getItemId() == R.id.action_settings) {
+			
+		} else if(item.getItemId() == R.id.action_like) {
+			// start Facebook Login
+			  Session.openActiveSession(this, true, new Session.StatusCallback() {
+
+				@Override
+				public void call(Session session, SessionState state,
+						Exception exception) {
+					
+					Log.i("log_tag", "Token=" + session.getAccessToken());
+		            Log.i("log_tag", "Token=" + session.isOpened());
+		            
+					if(session.isOpened()) {
+						// make request to the /me API
+						Request.executeMeRequestAsync(session, new Request.GraphUserCallback() {
+
+						  // callback after Graph API response with user object
+						  @Override
+						  public void onCompleted(GraphUser user, Response response) {
+							  Toast.makeText(MainActivity.this, user.getName() + "»¡Æg!!!", Toast.LENGTH_SHORT).show();							  
+						  }
+						});						
+											
+					}
+				}
+				  
+			  });
 		}
 		return super.onOptionsItemSelected(item);
 	}

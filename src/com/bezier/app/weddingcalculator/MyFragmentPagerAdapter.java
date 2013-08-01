@@ -7,7 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
-	private static final int PAGE_COUNT = 5;
+	private static final int PAGE_COUNT = 4;
 	
 	public MyFragmentPagerAdapter(FragmentManager fm) {
 		super(fm);
@@ -38,11 +38,11 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 			data.putInt("current_page", arg0+1);
 			fragment4.setArguments(data);
 			return fragment4;				
-		case 4:
+/*		case 4:
 			AppleFragment appleFragment = new AppleFragment();
 			data.putInt("current_page", arg0+1);
 			appleFragment.setArguments(data);
-			return appleFragment;			
+			return appleFragment;	*/		
 		}
 		
 		return null;
