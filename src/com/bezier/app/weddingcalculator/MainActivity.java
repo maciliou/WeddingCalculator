@@ -15,6 +15,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.Signature;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
@@ -118,6 +119,10 @@ public class MainActivity extends FragmentActivity {
 				.setTabListener(tabListener);
         mActionBar.addTab(tab);
 		
+        //setup ActionBar background color
+        mActionBar.setStackedBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.tab_background)));
+        mActionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.tab_slider)));
+        
         // Add code to print out the key hash
         try {
             PackageInfo info = getPackageManager().getPackageInfo(
@@ -132,7 +137,7 @@ public class MainActivity extends FragmentActivity {
 
         } catch (NoSuchAlgorithmException e) {
 
-        }        
+        }    
 		
 	}
 
