@@ -1,22 +1,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <item
+<!--     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:showAsAction="never"
         android:title="@string/action_settings"
-        />
+        /> -->
     
     <item android:id="@+id/action_like"
           android:title="LIKE"
           android:showAsAction="always"   
           android:icon="@drawable/button_like"          
           />    
-    <!-- 
-    <item android:id="@+id/menu_share"
+    
+<!--     <item android:id="@+id/menu_share"
           android:title="test"
           android:showAsAction="ifRoom" 
           android:actionProviderClass="android.widget.ShareActionProvider"          
-          />
-          -->    
+          /> -->
+             
 </menu>
