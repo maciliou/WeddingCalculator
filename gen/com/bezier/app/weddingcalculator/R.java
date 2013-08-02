@@ -223,24 +223,27 @@ containing a value of this type.
         public static final int com_facebook_top_button=0x7f020026;
         public static final int com_facebook_usersettingsfragment_background_gradient=0x7f020027;
         public static final int cookie=0x7f020028;
-        public static final int diamond=0x7f020029;
-        public static final int edit_text_focus_bg=0x7f02002a;
-        public static final int footer_bg=0x7f02002b;
-        public static final int gift=0x7f02002c;
-        public static final int gifts=0x7f02002d;
-        public static final int ic_launcher=0x7f02002e;
-        public static final int mail=0x7f02002f;
-        public static final int mockup=0x7f020030;
-        public static final int money=0x7f020031;
-        public static final int other=0x7f020032;
-        public static final int result_text_view_bg=0x7f020033;
-        public static final int title_bg=0x7f020034;
-        public static final int wine=0x7f020035;
+        public static final int decorate=0x7f020029;
+        public static final int diamond=0x7f02002a;
+        public static final int edit_text_focus_bg=0x7f02002b;
+        public static final int footer_bg=0x7f02002c;
+        public static final int gift=0x7f02002d;
+        public static final int gifts=0x7f02002e;
+        public static final int gold=0x7f02002f;
+        public static final int ic_launcher=0x7f020030;
+        public static final int info_logo=0x7f020031;
+        public static final int loan_cal_icon=0x7f020032;
+        public static final int mail=0x7f020033;
+        public static final int mockup=0x7f020034;
+        public static final int money=0x7f020035;
+        public static final int other=0x7f020036;
+        public static final int result_text_view_bg=0x7f020037;
+        public static final int title_bg=0x7f020038;
+        public static final int wine=0x7f020039;
     }
     public static final class id {
-        public static final int action_like=0x7f040033;
-        public static final int action_settings=0x7f040032;
-        public static final int button1=0x7f04002f;
+        public static final int action_like=0x7f040038;
+        public static final int button1=0x7f040033;
         public static final int com_facebook_login_activity_progress_bar=0x7f040006;
         public static final int com_facebook_picker_activity_circle=0x7f040005;
         public static final int com_facebook_picker_checkbox=0x7f040008;
@@ -260,25 +263,30 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f040018;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f040016;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f040017;
+        public static final int content=0x7f040036;
         public static final int editTextGroup1_01=0x7f04001c;
         public static final int editTextGroup2_01=0x7f04001d;
         public static final int editTextGroup2_02=0x7f04001e;
         public static final int editTextGroup3_01=0x7f04001f;
         public static final int editTextGroup3_02=0x7f040020;
-        public static final int editTextGroup3_03=0x7f040021;
-        public static final int editTextGroup3_04=0x7f040022;
-        public static final int editTextGroup3_05=0x7f040023;
-        public static final int editTextGroup3_06=0x7f040024;
-        public static final int editTextGroup4_01=0x7f040025;
-        public static final int editTextGroup4_02=0x7f040026;
-        public static final int editTextGroup4_03=0x7f040027;
-        public static final int editTextGroup4_04=0x7f040028;
-        public static final int editTextGroup4_05=0x7f040029;
-        public static final int editTextGroup4_06=0x7f04002a;
-        public static final int editTextGroup4_07=0x7f04002b;
-        public static final int editTextGroup4_08=0x7f04002c;
-        public static final int editTextGroup5_01=0x7f04002d;
-        public static final int editTextGroup6_01=0x7f04002e;
+        public static final int editTextGroup3_03=0x7f040026;
+        public static final int editTextGroup3_04=0x7f040021;
+        public static final int editTextGroup3_05=0x7f040024;
+        public static final int editTextGroup3_06=0x7f040023;
+        public static final int editTextGroup3_07=0x7f040022;
+        public static final int editTextGroup3_08=0x7f040027;
+        public static final int editTextGroup3_09=0x7f040028;
+        public static final int editTextGroup3_10=0x7f040029;
+        public static final int editTextGroup3_11=0x7f040025;
+        public static final int editTextGroup4_01=0x7f04002c;
+        public static final int editTextGroup4_02=0x7f04002d;
+        public static final int editTextGroup4_03=0x7f040030;
+        public static final int editTextGroup4_04=0x7f04002b;
+        public static final int editTextGroup4_05=0x7f04002f;
+        public static final int editTextGroup4_07=0x7f04002a;
+        public static final int editTextGroup4_08=0x7f04002e;
+        public static final int editTextGroup5_01=0x7f040031;
+        public static final int editTextGroup6_01=0x7f040032;
         public static final int icon=0x7f04001a;
         public static final int large=0x7f040002;
         public static final int normal=0x7f040001;
@@ -287,9 +295,10 @@ containing a value of this type.
         public static final int scrollView1=0x7f040019;
         public static final int search_box=0x7f040014;
         public static final int small=0x7f040000;
-        public static final int textView2=0x7f040031;
-        public static final int textViewTotalAmount=0x7f040030;
+        public static final int textView2=0x7f040035;
+        public static final int textViewTotalAmount=0x7f040034;
         public static final int title=0x7f04001b;
+        public static final int version=0x7f040037;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -316,7 +325,6 @@ containing a value of this type.
     }
     public static final class menu {
         public static final int main=0x7f090000;
-        public static final int second=0x7f090001;
     }
     public static final class string {
         public static final int Fragment1=0x7f05001d;

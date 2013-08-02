@@ -19,10 +19,10 @@ public class Fragment4 extends Fragment {
 			Bundle savedInstanceState) {
 		
 		View view = inflater.inflate(R.layout.fragment4, container, false);
-		TextView textView = (TextView)view.findViewById(R.id.textView2);
+		TextView textView = (TextView)view.findViewById(R.id.version);
 		Activity activity = getActivity();
 		try {
-			textView.append("\nv" + activity.getPackageManager().getPackageInfo(activity.getBaseContext().getPackageName(), 0).versionName);
+			textView.setText("¥Ø«eª©¥»¡Gv" + activity.getPackageManager().getPackageInfo(activity.getBaseContext().getPackageName(), 0).versionName);
 		} catch (NameNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
