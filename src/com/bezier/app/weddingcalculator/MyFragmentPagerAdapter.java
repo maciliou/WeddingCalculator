@@ -7,11 +7,10 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
-	private static final int PAGE_COUNT = 4;
+	private static final int PAGE_COUNT = 5;
 	
 	public MyFragmentPagerAdapter(FragmentManager fm) {
 		super(fm);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -37,12 +36,12 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 			Fragment4 fragment4 = new Fragment4();
 			data.putInt("current_page", arg0+1);
 			fragment4.setArguments(data);
-			return fragment4;				
-/*		case 4:
-			AppleFragment appleFragment = new AppleFragment();
+			return fragment4;	
+		case 4:
+			Fragment5 fragment5 = new Fragment5();
 			data.putInt("current_page", arg0+1);
-			appleFragment.setArguments(data);
-			return appleFragment;	*/		
+			fragment5.setArguments(data);
+			return fragment5;		
 		}
 		
 		return null;

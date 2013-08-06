@@ -23,11 +23,6 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.EditText;
-import android.widget.ShareActionProvider;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.facebook.*;
@@ -119,6 +114,11 @@ public class MainActivity extends FragmentActivity {
 				.setTabListener(tabListener);
         mActionBar.addTab(tab);
 		
+		tab = mActionBar.newTab()
+				.setText(MainActivity.this.getResources().getText(R.string.Fragment5))
+				.setTabListener(tabListener);
+        mActionBar.addTab(tab);
+        
         //setup ActionBar background color
         mActionBar.setStackedBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.tab_background)));
         mActionBar.setSplitBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.tab_slider)));
