@@ -169,162 +169,139 @@ public class Fragment1 extends Fragment {
 				try {
 					valueOfEditTextGroup1_01 = Integer.valueOf(editTextGroup1_01.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "婚紗攝影及禮服 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup1_01 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup2_01 = Integer.valueOf(editTextGroup2_01.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "提親禮品 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup2_01 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup2_02 = Integer.valueOf(editTextGroup2_02.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "婚媒人禮  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup2_02 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_01 = Integer.valueOf(editTextGroup3_01.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "六樣禮 / 十二樣禮 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_01 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_02 = Integer.valueOf(editTextGroup3_02.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "訂婚紅包禮 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_02 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_03 = Integer.valueOf(editTextGroup3_03.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "訂婚宴  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_03 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_04 = Integer.valueOf(editTextGroup3_04.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "婚婚戒 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_04 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_05 = Integer.valueOf(editTextGroup3_05.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "喜餅  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_05 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_06 = Integer.valueOf(editTextGroup3_06.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "聘金  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_06 = 0;
 				}
 								
 				try {
 					valueOfEditTextGroup3_07 = Integer.valueOf(editTextGroup3_07.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "金飾  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_07 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_08 = Integer.valueOf(editTextGroup3_08.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "錄影及攝影  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_08 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup3_09 = Integer.valueOf(editTextGroup3_09.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "新娘秘書  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_09 = 0;
 				}
 
 				try {
 					valueOfEditTextGroup3_10 = Integer.valueOf(editTextGroup3_10.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "場地佈置  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_10 = 0;
 				}				
 				
 				try {
 					valueOfEditTextGroup3_11 = Integer.valueOf(editTextGroup3_11.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "訂婚喜帖印製  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup3_11 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup4_01 = Integer.valueOf(editTextGroup4_01.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "喜帖印製寄發(含郵資、電話費…)  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup4_01 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup4_02 = Integer.valueOf(editTextGroup4_02.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "喜宴酒席  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup4_02 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup4_03 = Integer.valueOf(editTextGroup4_03.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "場地佈置  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup4_03 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup4_04 = Integer.valueOf(editTextGroup4_04.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "婚美容、新娘秘書  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup4_04 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup4_05 = Integer.valueOf(editTextGroup4_05.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "婚紗攝影及禮服 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
-				}
+					valueOfEditTextGroup4_05 = 0;
+				}		
 				
 				try {
 					valueOfEditTextGroup4_07 = Integer.valueOf(editTextGroup4_07.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "結婚紅包類  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup4_07 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup4_08 = Integer.valueOf(editTextGroup4_08.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "婚禮錄影及攝影  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup4_08 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup5_01 = Integer.valueOf(editTextGroup5_01.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "蜜月旅行  不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup5_01 = 0;
 				}
 				
 				try {
 					valueOfEditTextGroup6_01 = Integer.valueOf(editTextGroup6_01.getText().toString());
 				} catch(NumberFormatException e) {
-					Toast.makeText(getActivity(), "其他雜項 不能為空", Toast.LENGTH_SHORT).show();  
-					return;
+					valueOfEditTextGroup6_01 = 0;
 				}		
 
 				total += valueOfEditTextGroup1_01;
