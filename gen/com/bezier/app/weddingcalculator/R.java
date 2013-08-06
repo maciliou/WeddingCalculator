@@ -251,7 +251,7 @@ containing a value of this type.
         public static final int wine=0x7f020040;
     }
     public static final class id {
-        public static final int action_like=0x7f040038;
+        public static final int action_like=0x7f04003a;
         public static final int button1=0x7f040033;
         public static final int com_facebook_login_activity_progress_bar=0x7f040006;
         public static final int com_facebook_picker_activity_circle=0x7f040005;
@@ -272,7 +272,6 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_login_button=0x7f040018;
         public static final int com_facebook_usersettingsfragment_logo_image=0x7f040016;
         public static final int com_facebook_usersettingsfragment_profile_name=0x7f040017;
-        public static final int content=0x7f040036;
         public static final int editTextGroup1_01=0x7f04001c;
         public static final int editTextGroup2_01=0x7f04001d;
         public static final int editTextGroup2_02=0x7f04001e;
@@ -297,6 +296,8 @@ containing a value of this type.
         public static final int editTextGroup5_01=0x7f040031;
         public static final int editTextGroup6_01=0x7f040032;
         public static final int icon=0x7f04001a;
+        public static final int icon1=0x7f040036;
+        public static final int icon2=0x7f040039;
         public static final int large=0x7f040002;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040003;
@@ -307,7 +308,8 @@ containing a value of this type.
         public static final int textView2=0x7f040035;
         public static final int textViewTotalAmount=0x7f040034;
         public static final int title=0x7f04001b;
-        public static final int version=0x7f040037;
+        public static final int title1=0x7f040037;
+        public static final int version=0x7f040038;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
@@ -329,8 +331,9 @@ containing a value of this type.
         public static final int fragment2=0x7f030010;
         public static final int fragment3=0x7f030011;
         public static final int fragment4=0x7f030012;
-        public static final int number_edit_text=0x7f030013;
-        public static final int result_text_view=0x7f030014;
+        public static final int fragment5=0x7f030013;
+        public static final int number_edit_text=0x7f030014;
+        public static final int result_text_view=0x7f030015;
     }
     public static final class menu {
         public static final int main=0x7f090000;
@@ -340,9 +343,12 @@ containing a value of this type.
         public static final int Fragment2=0x7f05001e;
         public static final int Fragment3=0x7f05001f;
         public static final int Fragment4=0x7f050020;
+        public static final int Fragment5=0x7f050021;
+        public static final int LoanCalculator=0x7f050025;
         public static final int action_settings=0x7f05001a;
-        public static final int app_id=0x7f050021;
+        public static final int app_id=0x7f050022;
         public static final int app_name=0x7f050019;
+        public static final int bezier=0x7f050024;
         public static final int com_facebook_choose_friends=0x7f05000f;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f050000;
         public static final int com_facebook_internet_permission_error_message=0x7f050013;
@@ -368,6 +374,7 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_log_in_button=0x7f050008;
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
+        public static final int fragment4Title1Content=0x7f050023;
         public static final int hello_world=0x7f05001b;
         public static final int title_activity_second=0x7f05001c;
     }
