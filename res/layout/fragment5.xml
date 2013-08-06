@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="推薦App"
+            android:text="Recommend App"
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="#d91c5c" />
     </RelativeLayout>
@@ -85,7 +85,7 @@
             android:id="@+id/title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="房貸計算機\n快速試算房貸利率第一首選，是購屋、投資、仲介不可缺的小工具。"
+            android:text="Loan Calculator"
              />
     </LinearLayout>
 
