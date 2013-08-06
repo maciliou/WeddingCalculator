@@ -21,6 +21,8 @@ int color com_facebook_loginview_text_color 0x7f060004
 int color com_facebook_usersettingsfragment_connected_shadow_color 0x7f060002
 int color com_facebook_usersettingsfragment_connected_text_color 0x7f060001
 int color com_facebook_usersettingsfragment_not_connected_text_color 0x7f060003
+int color tab_background 0x7f060005
+int color tab_slider 0x7f060006
 int dimen activity_horizontal_margin 0x7f07000c
 int dimen activity_vertical_margin 0x7f07000d
 int dimen com_facebook_loginview_height 0x7f070007
@@ -93,8 +95,15 @@ int drawable mockup 0x7f020034
 int drawable money 0x7f020035
 int drawable other 0x7f020036
 int drawable result_text_view_bg 0x7f020037
-int drawable title_bg 0x7f020038
-int drawable wine 0x7f020039
+int drawable tab_indicator_ab_example 0x7f020038
+int drawable tab_selected_example 0x7f020039
+int drawable tab_selected_focused_example 0x7f02003a
+int drawable tab_selected_pressed_example 0x7f02003b
+int drawable tab_unselected_example 0x7f02003c
+int drawable tab_unselected_focused_example 0x7f02003d
+int drawable tab_unselected_pressed_example 0x7f02003e
+int drawable title_bg 0x7f02003f
+int drawable wine 0x7f020040
 int id action_like 0x7f040038
 int id button1 0x7f040033
 int id com_facebook_login_activity_progress_bar 0x7f040006
@@ -210,6 +219,7 @@ int string hello_world 0x7f05001b
 int string title_activity_second 0x7f05001c
 int style AppBaseTheme 0x7f080002
 int style AppTheme 0x7f080003
+int style Theme_MyAppTheme_ActionBarTabStyle 0x7f080004
 int style com_facebook_loginview_default_style 0x7f080000
 int style com_facebook_loginview_silver_style 0x7f080001
 int[] styleable com_facebook_friend_picker_fragment { 0x7f010007 }

@@ -156,6 +156,8 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_connected_shadow_color=0x7f060002;
         public static final int com_facebook_usersettingsfragment_connected_text_color=0x7f060001;
         public static final int com_facebook_usersettingsfragment_not_connected_text_color=0x7f060003;
+        public static final int tab_background=0x7f060005;
+        public static final int tab_slider=0x7f060006;
     }
     public static final class dimen {
         /**  Default screen margins, per the Android Design guidelines. 
@@ -238,8 +240,15 @@ containing a value of this type.
         public static final int money=0x7f020035;
         public static final int other=0x7f020036;
         public static final int result_text_view_bg=0x7f020037;
-        public static final int title_bg=0x7f020038;
-        public static final int wine=0x7f020039;
+        public static final int tab_indicator_ab_example=0x7f020038;
+        public static final int tab_selected_example=0x7f020039;
+        public static final int tab_selected_focused_example=0x7f02003a;
+        public static final int tab_selected_pressed_example=0x7f02003b;
+        public static final int tab_unselected_example=0x7f02003c;
+        public static final int tab_unselected_focused_example=0x7f02003d;
+        public static final int tab_unselected_pressed_example=0x7f02003e;
+        public static final int title_bg=0x7f02003f;
+        public static final int wine=0x7f020040;
     }
     public static final class id {
         public static final int action_like=0x7f040038;
@@ -386,9 +395,9 @@ containing a value of this type.
          */
         public static final int AppBaseTheme=0x7f080002;
         /**  Application theme. 
- All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f080003;
+        public static final int Theme_MyAppTheme_ActionBarTabStyle=0x7f080004;
         public static final int com_facebook_loginview_default_style=0x7f080000;
         public static final int com_facebook_loginview_silver_style=0x7f080001;
     }
