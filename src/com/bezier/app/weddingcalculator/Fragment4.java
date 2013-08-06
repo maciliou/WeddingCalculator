@@ -12,8 +12,6 @@ import android.webkit.WebViewClient;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class Fragment4 extends Fragment {
-
-	private String myURL = "http://www.google.com/";
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -26,7 +24,7 @@ public class Fragment4 extends Fragment {
         websettings.setJavaScriptEnabled(true);  
          
         myBrowser.setWebViewClient(new WebViewClient());  
-        myBrowser.loadUrl(myURL);  
+        myBrowser.loadUrl(getActivity().getResources().getText(R.string.fragment5URL).toString());  
         
 		return myBrowser;
 	}
