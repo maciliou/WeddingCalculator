@@ -378,7 +378,7 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
         public static final int fragment4Title1Content=0x7f050023;
-        public static final int fragment5URL=0x7f050026;
+        public static final int fragment4URL=0x7f050026;
         public static final int hello_world=0x7f05001b;
         public static final int title_activity_second=0x7f05001c;
     }
