@@ -2,6 +2,8 @@ package com.bezier.app.weddingcalculator;
 
 import android.support.v4.app.Fragment;
 import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -23,8 +25,16 @@ public class Fragment4 extends Fragment {
         websettings.setBuiltInZoomControls(true);   
         websettings.setJavaScriptEnabled(true);  
          
-        myBrowser.setWebViewClient(new WebViewClient());  
-        myBrowser.loadUrl(getActivity().getResources().getText(R.string.fragment5URL).toString());  
+        myBrowser.setWebViewClient(new WebViewClient() {
+
+			@Override
+			public boolean shouldOverrideUrlLoading(WebView view, String url) {
+				startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse(url)));
+				return true;
+			}
+        	
+        });            
+        myBrowser.loadUrl(getActivity().getResources().getText(R.string.fragment4URL).toString());  
         
 		return myBrowser;
 	}
