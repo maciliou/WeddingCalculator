@@ -234,21 +234,23 @@ containing a value of this type.
         public static final int gold=0x7f02002f;
         public static final int ic_launcher=0x7f020030;
         public static final int info_logo=0x7f020031;
-        public static final int loan_cal_icon=0x7f020032;
-        public static final int mail=0x7f020033;
-        public static final int mockup=0x7f020034;
-        public static final int money=0x7f020035;
-        public static final int other=0x7f020036;
-        public static final int result_text_view_bg=0x7f020037;
-        public static final int tab_indicator_ab_example=0x7f020038;
-        public static final int tab_selected_example=0x7f020039;
-        public static final int tab_selected_focused_example=0x7f02003a;
-        public static final int tab_selected_pressed_example=0x7f02003b;
-        public static final int tab_unselected_example=0x7f02003c;
-        public static final int tab_unselected_focused_example=0x7f02003d;
-        public static final int tab_unselected_pressed_example=0x7f02003e;
-        public static final int title_bg=0x7f02003f;
-        public static final int wine=0x7f020040;
+        public static final int loan_btn_normal=0x7f020032;
+        public static final int loan_btn_pressed=0x7f020033;
+        public static final int loan_cal_icon=0x7f020034;
+        public static final int mail=0x7f020035;
+        public static final int mockup=0x7f020036;
+        public static final int money=0x7f020037;
+        public static final int other=0x7f020038;
+        public static final int result_text_view_bg=0x7f020039;
+        public static final int tab_indicator_ab_example=0x7f02003a;
+        public static final int tab_selected_example=0x7f02003b;
+        public static final int tab_selected_focused_example=0x7f02003c;
+        public static final int tab_selected_pressed_example=0x7f02003d;
+        public static final int tab_unselected_example=0x7f02003e;
+        public static final int tab_unselected_focused_example=0x7f02003f;
+        public static final int tab_unselected_pressed_example=0x7f020040;
+        public static final int title_bg=0x7f020041;
+        public static final int wine=0x7f020042;
     }
     public static final class id {
         public static final int action_like=0x7f04003a;
@@ -297,8 +299,8 @@ containing a value of this type.
         public static final int editTextGroup6_01=0x7f040032;
         public static final int icon=0x7f04001a;
         public static final int icon1=0x7f040036;
-        public static final int icon2=0x7f040039;
         public static final int large=0x7f040002;
+        public static final int loanButton=0x7f040039;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040003;
         public static final int picker_subtitle=0x7f040015;
@@ -332,8 +334,9 @@ containing a value of this type.
         public static final int fragment3=0x7f030011;
         public static final int fragment4=0x7f030012;
         public static final int fragment5=0x7f030013;
-        public static final int number_edit_text=0x7f030014;
-        public static final int result_text_view=0x7f030015;
+        public static final int loan_cal_btn=0x7f030014;
+        public static final int number_edit_text=0x7f030015;
+        public static final int result_text_view=0x7f030016;
     }
     public static final class menu {
         public static final int main=0x7f090000;
