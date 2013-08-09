@@ -20,4 +20,8 @@
     <string name="fragment5ButtonLink">https://play.google.com/store/apps/details?id=com.bezier.app.loancalculator</string>
     <string name="recommended_app">推薦應用</string>
     <string name="currentVersion">目前版本：v</string>
+    <string name="facebookCaption">結婚小幫手</string>
+    <string name="facebookMessage">快速試算結婚預算第一首選，是新婚族不可缺的小工具</string>
+    <string name="facebookSharedMessage">以分享至Facebook</string>
+    
 </resources>

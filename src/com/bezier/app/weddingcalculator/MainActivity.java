@@ -179,8 +179,8 @@ public class MainActivity extends FragmentActivity {
 											Response response) {
 										if (user != null) {
 											Bundle params = new Bundle();
-											params.putString("caption", "結婚小幫手");
-											params.putString("message", "快速試算結婚預算第一首選，是新婚族不可缺的小工具");
+											params.putString("caption", MainActivity.this.getResources().getText(R.string.facebookCaption).toString());
+											params.putString("message", MainActivity.this.getResources().getText(R.string.facebookMessage).toString());
 											params.putString("link", "https://play.google.com/apps/testing/com.bezier.app.weddingcalculator");
 											params.putString("picture", "https://drive.google.com/uc?export=view&id=0BxQow9kRw_AHUnZmbVFmWHdIUW8");
 
@@ -198,7 +198,7 @@ public class MainActivity extends FragmentActivity {
 																	if (error == null) {
 																		final String postId = values.getString("post_id");
 																		if (postId != null) {
-																			Toast.makeText(MainActivity.this, "已分享至臉書", Toast.LENGTH_LONG).show();
+																			Toast.makeText(MainActivity.this, MainActivity.this.getResources().getText(R.string.facebookSharedMessage).toString(), Toast.LENGTH_LONG).show();
 																		}
 																	}
 
