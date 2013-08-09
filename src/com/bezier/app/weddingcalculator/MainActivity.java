@@ -181,7 +181,7 @@ public class MainActivity extends FragmentActivity {
 											Bundle params = new Bundle();
 											params.putString("caption", MainActivity.this.getResources().getText(R.string.facebookCaption).toString());
 											params.putString("message", MainActivity.this.getResources().getText(R.string.facebookMessage).toString());
-											params.putString("link", "https://play.google.com/apps/testing/com.bezier.app.weddingcalculator");
+											params.putString("link", "https://play.google.com/store/apps/details?id=com.bezier.app.weddingcalculator");
 											params.putString("picture", "https://drive.google.com/uc?export=view&id=0BxQow9kRw_AHUnZmbVFmWHdIUW8");
 
 											WebDialog feedDialog = (new WebDialog.FeedDialogBuilder(
