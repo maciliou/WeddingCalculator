@@ -18,4 +18,6 @@
     <string name="LoanCalculator">房貸計算機</string>
     <string name="fragment4URL">http://1.34.249.58/app_page.html</string>
     <string name="fragment5ButtonLink">https://play.google.com/store/apps/details?id=com.bezier.app.loancalculator</string>
+    <string name="recommended_app">推薦應用</string>
+    <string name="currentVersion">目前版本：v</string>
 </resources>

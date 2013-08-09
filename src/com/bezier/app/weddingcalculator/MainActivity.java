@@ -179,10 +179,10 @@ public class MainActivity extends FragmentActivity {
 											Response response) {
 										if (user != null) {
 											Bundle params = new Bundle();
-											params.putString("caption", "房貸計算機");
-											params.putString("message", "【房貸計算機】 快速試算房貸利率第一首選，是購屋、投資、仲介不可缺的小工具");
-											params.putString("link", "https://play.google.com/store/apps/details?id=com.bezier.app.loancalculator");
-											params.putString("picture", "https://drive.google.com/uc?export=view&id=0BxQow9kRw_AHOEtqRGk1U18xSWc");
+											params.putString("caption", "結婚小幫手");
+											params.putString("message", "快速試算結婚預算第一首選，是新婚族不可缺的小工具");
+											params.putString("link", "https://play.google.com/apps/testing/com.bezier.app.weddingcalculator");
+											params.putString("picture", "https://drive.google.com/uc?export=view&id=0BxQow9kRw_AHUnZmbVFmWHdIUW8");
 
 											WebDialog feedDialog = (new WebDialog.FeedDialogBuilder(
 													MainActivity.this,

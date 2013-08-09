@@ -31,7 +31,7 @@ public class Fragment5 extends Fragment {
 		
 		// Display the version
 		try {
-			textView.setText("¥Ø«eª©¥»¡Gv" + activity.getPackageManager().getPackageInfo(activity.getBaseContext().getPackageName(), 0).versionName);
+			textView.setText(activity.getResources().getText(R.string.currentVersion) + activity.getPackageManager().getPackageInfo(activity.getBaseContext().getPackageName(), 0).versionName);
 		} catch (NameNotFoundException e) {
 			e.printStackTrace();
 		}
