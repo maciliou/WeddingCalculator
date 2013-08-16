@@ -23,5 +23,6 @@
     <string name="facebookMessage">快速試算結婚預算第一首選，是新婚族不可缺的小工具</string>
     <string name="facebookSharedMessage">已分享至Facebook</string>
     <string name="err_intelnet">沒有網路連線，無法觀看此頁，請連線後再試一次。</string>
+    <string name="refresh_button">重試</string>
         
 </resources>
