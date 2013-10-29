@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">WeddingCalculator</string>
+    <string name="app_name">結婚小工具-貝姿婚禮</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-    <string name="title_activity_second">SecondActivity</string>
     
     <string name="Fragment1">結婚預算</string>
     <string name="Fragment2">文定禮俗</string>
@@ -22,6 +21,9 @@
     <string name="currentVersion">目前版本：v</string>
     <string name="facebookCaption">結婚小幫手</string>
     <string name="facebookMessage">快速試算結婚預算第一首選，是新婚族不可缺的小工具</string>
-    <string name="facebookSharedMessage">以分享至Facebook</string>
+    <string name="facebookSharedMessage">已分享至Facebook</string>
+    <string name="err_intelnet">沒有網路連線，無法觀看此頁，請連線後再試一次。</string>
+    <string name="refresh_button">重試</string>
+    <string name="data_processing">資料擷取中</string>
     
 </resources>

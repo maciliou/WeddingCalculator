@@ -345,16 +345,16 @@ containing a value of this type.
         public static final int main=0x7f090000;
     }
     public static final class string {
-        public static final int Fragment1=0x7f05001d;
-        public static final int Fragment2=0x7f05001e;
-        public static final int Fragment3=0x7f05001f;
-        public static final int Fragment4=0x7f050020;
-        public static final int Fragment5=0x7f050021;
-        public static final int LoanCalculator=0x7f050025;
+        public static final int Fragment1=0x7f05001c;
+        public static final int Fragment2=0x7f05001d;
+        public static final int Fragment3=0x7f05001e;
+        public static final int Fragment4=0x7f05001f;
+        public static final int Fragment5=0x7f050020;
+        public static final int LoanCalculator=0x7f050024;
         public static final int action_settings=0x7f05001a;
-        public static final int app_id=0x7f050022;
+        public static final int app_id=0x7f050021;
         public static final int app_name=0x7f050019;
-        public static final int bezier=0x7f050024;
+        public static final int bezier=0x7f050023;
         public static final int com_facebook_choose_friends=0x7f05000f;
         public static final int com_facebook_dialogloginactivity_ok_button=0x7f050000;
         public static final int com_facebook_internet_permission_error_message=0x7f050013;
@@ -380,18 +380,18 @@ containing a value of this type.
         public static final int com_facebook_usersettingsfragment_log_in_button=0x7f050008;
         public static final int com_facebook_usersettingsfragment_logged_in=0x7f050009;
         public static final int com_facebook_usersettingsfragment_not_logged_in=0x7f05000a;
-        public static final int currentVersion=0x7f050029;
-        public static final int err_intelnet=0x7f05002d;
-        public static final int facebookCaption=0x7f05002a;
-        public static final int facebookMessage=0x7f05002b;
-        public static final int facebookSharedMessage=0x7f05002c;
-        public static final int fragment4Title1Content=0x7f050023;
-        public static final int fragment4URL=0x7f050026;
-        public static final int fragment5ButtonLink=0x7f050027;
+        public static final int currentVersion=0x7f050028;
+        public static final int data_processing=0x7f05002e;
+        public static final int err_intelnet=0x7f05002c;
+        public static final int facebookCaption=0x7f050029;
+        public static final int facebookMessage=0x7f05002a;
+        public static final int facebookSharedMessage=0x7f05002b;
+        public static final int fragment4Title1Content=0x7f050022;
+        public static final int fragment4URL=0x7f050025;
+        public static final int fragment5ButtonLink=0x7f050026;
         public static final int hello_world=0x7f05001b;
-        public static final int recommended_app=0x7f050028;
-        public static final int refresh_button=0x7f05002e;
-        public static final int title_activity_second=0x7f05001c;
+        public static final int recommended_app=0x7f050027;
+        public static final int refresh_button=0x7f05002d;
     }
     public static final class style {
         /** 
