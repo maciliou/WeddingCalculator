@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.LinearLayout;
 
 @SuppressLint("SetJavaScriptEnabled")
 public class Fragment4 extends Fragment {
@@ -23,6 +24,7 @@ public class Fragment4 extends Fragment {
 	private String dataProcessString = null;
 	private WebView myBrowser = null;
 	private ProgressDialog pd = null;
+	private LinearLayout linlaHeaderProgress = null;
 	
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -63,8 +65,13 @@ public class Fragment4 extends Fragment {
     public void setUserVisibleHint(boolean isVisibleToUser) {
 		super.setUserVisibleHint(isVisibleToUser);
         if (isVisibleToUser) {
-            pd = ProgressDialog.show(getActivity(), null, dataProcessString,true,false,null);
-
+            //pd = ProgressDialog.show(getActivity(), null, dataProcessString,true,false,null);
+            //pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+            
+        	// CAST THE LINEARLAYOUT HOLDING THE MAIN PROGRESS (SPINNER)
+        	linlaHeaderProgress = (LinearLayout) getActivity().findViewById(R.id.linlaHeaderProgress);
+        	linlaHeaderProgress.setVisibility(View.VISIBLE);
+        	
             try {
             	// check whether server is accessible. If not, we show another screen
             	HttpTestThread thread = new HttpTestThread(bezierURL);
@@ -113,9 +120,12 @@ public class Fragment4 extends Fragment {
 					@Override
 					public void run() {
 						
-						if(pd.isShowing()) {
+/*						if(pd.isShowing()) {
 							pd.dismiss();
-						}
+						}*/
+						
+						if(linlaHeaderProgress != null)
+							linlaHeaderProgress.setVisibility(View.GONE);
 						
 			        	if(success) {
 			        		myBrowser.loadUrl(bezierURL);

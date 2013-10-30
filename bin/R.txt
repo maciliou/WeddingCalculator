@@ -106,7 +106,7 @@ int drawable tab_unselected_focused_example 0x7f02003f
 int drawable tab_unselected_pressed_example 0x7f020040
 int drawable title_bg 0x7f020041
 int drawable wine 0x7f020042
-int id action_like 0x7f04003c
+int id action_like 0x7f04003e
 int id button1 0x7f040035
 int id com_facebook_login_activity_progress_bar 0x7f040006
 int id com_facebook_picker_activity_circle 0x7f040005
@@ -152,11 +152,13 @@ int id editTextGroup5_01 0x7f040033
 int id editTextGroup6_01 0x7f040034
 int id errIntelnet 0x7f040019
 int id icon 0x7f04001c
-int id icon1 0x7f040038
+int id icon1 0x7f04003a
 int id large 0x7f040002
-int id loanButton 0x7f04003b
+int id linlaHeaderProgress 0x7f040038
+int id loanButton 0x7f04003d
 int id normal 0x7f040001
 int id pager 0x7f040003
+int id pbHeaderProgress 0x7f040039
 int id picker_subtitle 0x7f040015
 int id refreshButton 0x7f04001a
 int id scrollView1 0x7f04001b
@@ -165,8 +167,8 @@ int id small 0x7f040000
 int id textView2 0x7f040037
 int id textViewTotalAmount 0x7f040036
 int id title 0x7f04001d
-int id title1 0x7f040039
-int id version 0x7f04003a
+int id title1 0x7f04003b
+int id version 0x7f04003c
 int layout activity_main 0x7f030000
 int layout calcultor_btn 0x7f030001
 int layout com_facebook_friendpickerfragment 0x7f030002

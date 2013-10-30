@@ -253,7 +253,7 @@ containing a value of this type.
         public static final int wine=0x7f020042;
     }
     public static final class id {
-        public static final int action_like=0x7f04003c;
+        public static final int action_like=0x7f04003e;
         public static final int button1=0x7f040035;
         public static final int com_facebook_login_activity_progress_bar=0x7f040006;
         public static final int com_facebook_picker_activity_circle=0x7f040005;
@@ -299,11 +299,13 @@ containing a value of this type.
         public static final int editTextGroup6_01=0x7f040034;
         public static final int errIntelnet=0x7f040019;
         public static final int icon=0x7f04001c;
-        public static final int icon1=0x7f040038;
+        public static final int icon1=0x7f04003a;
         public static final int large=0x7f040002;
-        public static final int loanButton=0x7f04003b;
+        public static final int linlaHeaderProgress=0x7f040038;
+        public static final int loanButton=0x7f04003d;
         public static final int normal=0x7f040001;
         public static final int pager=0x7f040003;
+        public static final int pbHeaderProgress=0x7f040039;
         public static final int picker_subtitle=0x7f040015;
         public static final int refreshButton=0x7f04001a;
         public static final int scrollView1=0x7f04001b;
@@ -312,8 +314,8 @@ containing a value of this type.
         public static final int textView2=0x7f040037;
         public static final int textViewTotalAmount=0x7f040036;
         public static final int title=0x7f04001d;
-        public static final int title1=0x7f040039;
-        public static final int version=0x7f04003a;
+        public static final int title1=0x7f04003b;
+        public static final int version=0x7f04003c;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;

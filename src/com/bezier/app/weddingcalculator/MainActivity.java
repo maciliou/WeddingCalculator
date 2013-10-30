@@ -23,6 +23,7 @@ import android.util.Base64;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.Window;
 import android.widget.Toast;
 
 import com.facebook.*;
@@ -45,7 +46,11 @@ public class MainActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_main);
+		
+		// enable these two lines will show the progress spinner on actionbar
+        //requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);          
+		setContentView(R.layout.activity_main);		
+		//setProgressBarIndeterminateVisibility(true);
 				
 		mActionBar = getActionBar();
 		mActionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -139,6 +144,7 @@ public class MainActivity extends FragmentActivity {
 
         }    
 		
+    
 	}
 
 	
