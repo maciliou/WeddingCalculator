@@ -5,6 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import android.support.v4.app.Fragment;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -25,7 +26,9 @@ public class Fragment4 extends Fragment {
 	private WebView myBrowser = null;
 	private ProgressDialog pd = null;
 	private LinearLayout linlaHeaderProgress = null;
+	private Activity mActivity;
 	
+
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
@@ -60,18 +63,15 @@ public class Fragment4 extends Fragment {
         
 		return myBrowser;
 	}
+
 	
-    @Override
-    public void setUserVisibleHint(boolean isVisibleToUser) {
-		super.setUserVisibleHint(isVisibleToUser);
-        if (isVisibleToUser) {
-            //pd = ProgressDialog.show(getActivity(), null, dataProcessString,true,false,null);
-            //pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
-            
-        	// CAST THE LINEARLAYOUT HOLDING THE MAIN PROGRESS (SPINNER)
-        	linlaHeaderProgress = (LinearLayout) getActivity().findViewById(R.id.linlaHeaderProgress);
-        	linlaHeaderProgress.setVisibility(View.VISIBLE);
-        	
+	@Override
+	public void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		linlaHeaderProgress = (LinearLayout) getActivity().findViewById(R.id.linlaHeaderProgress);    		
+    	if(linlaHeaderProgress != null) {
+    		linlaHeaderProgress.setVisibility(View.VISIBLE);
             try {
             	// check whether server is accessible. If not, we show another screen
             	HttpTestThread thread = new HttpTestThread(bezierURL);
@@ -79,9 +79,37 @@ public class Fragment4 extends Fragment {
             	
             } catch (Exception e) {
             	e.printStackTrace();
-            }	
+            }	     		
+    	}   	
+
+	}
+
+
+	@Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+		super.setUserVisibleHint(isVisibleToUser);
+		
+        if (isVisibleToUser) {
+            //pd = ProgressDialog.show(getActivity(), null, dataProcessString,true,false,null);
+            //pd.setProgressStyle(ProgressDialog.STYLE_SPINNER);
         }		
 	}
+
+    
+	@Override
+	public void onAttach(Activity activity) {
+		// TODO Auto-generated method stub
+		super.onAttach(activity);
+		mActivity = activity;
+	}
+
+	@Override
+	public void onDetach() {
+		// TODO Auto-generated method stub
+		super.onDetach();
+		mActivity = null;
+	}
+
 
 	private class HttpTestThread extends Thread {
 		
@@ -115,26 +143,28 @@ public class Fragment4 extends Fragment {
 				}
 				
 				// update webview
-				getActivity().runOnUiThread(new Runnable() {
+				if(mActivity != null) {
+					mActivity.runOnUiThread(new Runnable() {
 
-					@Override
-					public void run() {
+						@Override
+						public void run() {
+							
+	/*						if(pd.isShowing()) {
+								pd.dismiss();
+							}*/
+							
+							if(linlaHeaderProgress != null)
+								linlaHeaderProgress.setVisibility(View.GONE);
+							
+				        	if(success) {
+				        		myBrowser.loadUrl(bezierURL);
+				        	} else {
+				        		myBrowser.loadUrl("file:///android_asset/ioerror.html");
+				        	}	
+						}
 						
-/*						if(pd.isShowing()) {
-							pd.dismiss();
-						}*/
-						
-						if(linlaHeaderProgress != null)
-							linlaHeaderProgress.setVisibility(View.GONE);
-						
-			        	if(success) {
-			        		myBrowser.loadUrl(bezierURL);
-			        	} else {
-			        		myBrowser.loadUrl("file:///android_asset/ioerror.html");
-			        	}	
-					}
-					
-				});
+					});
+				}
 		
 			}				
 		}
