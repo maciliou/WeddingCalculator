@@ -89,10 +89,10 @@ int drawable gifts 0x7f02002e
 int drawable gold 0x7f02002f
 int drawable ic_launcher 0x7f020030
 int drawable info_logo 0x7f020031
-int drawable loan_btn_normal 0x7f020032
-int drawable loan_btn_pressed 0x7f020033
-int drawable loan_cal_icon 0x7f020034
-int drawable loerror 0x7f020035
+int drawable ioerror 0x7f020032
+int drawable loan_btn_normal 0x7f020033
+int drawable loan_btn_pressed 0x7f020034
+int drawable loan_cal_icon 0x7f020035
 int drawable mail 0x7f020036
 int drawable mockup 0x7f020037
 int drawable money 0x7f020038
